@@ -186,10 +186,16 @@ input:focus {
 }
 
 .about-link {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   right: 20px;
   color: #fff;
+  background-color: #807b7d;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
   cursor: pointer;
 }
 
@@ -199,6 +205,7 @@ input:focus {
 
 .about-link a:hover {
   color: #ff6a95;
+
 }
 
 .about h1 {
