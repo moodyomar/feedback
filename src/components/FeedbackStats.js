@@ -4,6 +4,7 @@ import FeedbackContext from '../context/FeedbackContext';
 
 
 const FeedbackStats = () => { 
+  
   const {feedback} = useContext(FeedbackContext);
 // calculate ratings avg
 let average = feedback.reduce((acc,cur) => {
@@ -23,7 +24,7 @@ return(
 }
 
 FeedbackStats.propTypes = {
-  feedback: PropTypes.array.isRequired,
+  feedback: PropTypes.array,
 }
 
 export default FeedbackStats
