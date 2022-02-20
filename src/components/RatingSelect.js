@@ -21,8 +21,8 @@ return(
   <ul className='rating'>
     
     {[1,2,3,4,5,6,7,8,9,10].map(num => (
-      <RatingButton value={num} onChange={handleChange}
-      selected={selected} />
+      <RatingButton key={num} value={num} 
+      onChange={handleChange} selected={selected} />
     ))}
 
 </ul>

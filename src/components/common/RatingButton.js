@@ -11,11 +11,11 @@ return(
       type='radio'
       id={`num${value}`}
       name='rating'
-      value='1'
+      value={value}
       onChange={onChange}
       checked={selected === value}
     />
-    <label htmlFor='num1'>{value}</label>
+    <label htmlFor={`num${value}`}>{value}</label>
   </li>
 </>
 
