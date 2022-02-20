@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const RatingButton = ({id,value,onChange,selected,}) => { 
+const RatingButton = ({value,onChange,selected,}) => { 
 
 return(
 
@@ -9,7 +9,7 @@ return(
 <li>
     <input
       type='radio'
-      id='num1'
+      id={`num${value}`}
       name='rating'
       value='1'
       onChange={onChange}
